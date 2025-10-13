@@ -1,0 +1,6 @@
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\bin\Debug\dominio.dll
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\bin\Debug\dominio.pdb
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.dll
+D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.pdb
