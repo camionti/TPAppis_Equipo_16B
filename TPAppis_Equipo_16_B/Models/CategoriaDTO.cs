@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using dominio;
+using System.Web;
 
-namespace dominio
+namespace TPAppis_Equipo_16_B.Models
 {
-    public class Categoria
+    public class CategoriaDTO
     {
         public int Id { get; set; }
         public string Descripcion { get; set; }
-        public override string ToString() => Descripcion;
     }
 }

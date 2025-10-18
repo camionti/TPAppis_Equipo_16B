@@ -16,3 +16,12 @@ D:\Desktop\PROGRAMACION III\TPAppis_Equipo_16_B\Conexion\obj\Debug\Conexion.cspr
 D:\Desktop\PROGRAMACION III\TPAppis_Equipo_16_B\Conexion\obj\Debug\Conexion.csproj.Up2Date
 D:\Desktop\PROGRAMACION III\TPAppis_Equipo_16_B\Conexion\obj\Debug\Conexion.dll
 D:\Desktop\PROGRAMACION III\TPAppis_Equipo_16_B\Conexion\obj\Debug\Conexion.pdb
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\bin\Debug\Conexion.dll
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\bin\Debug\dominio.dll
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\bin\Debug\dominio.pdb
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\obj\Debug\Conexion.csproj.AssemblyReference.cache
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\obj\Debug\Conexion.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\obj\Debug\Conexion.csproj.Up2Date
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\obj\Debug\Conexion.dll
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\Conexion\obj\Debug\Conexion.pdb

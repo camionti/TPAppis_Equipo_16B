@@ -4,3 +4,9 @@ D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.csp
 D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.dll
 D:\Desktop\PROGRAMACION III\tp_winform_equipo_16_B\dominio\obj\Debug\dominio.pdb
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\bin\Debug\dominio.dll
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\bin\Debug\dominio.pdb
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\obj\Debug\dominio.dll
+C:\Users\Renzo\Desktop\TPAppis_Equipo_16B\dominio\obj\Debug\dominio.pdb
