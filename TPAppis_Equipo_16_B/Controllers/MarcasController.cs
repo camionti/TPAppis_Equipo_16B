@@ -12,7 +12,7 @@ using TPAppis_Equipo_16_B.Models;
 
 namespace TPAppis_Equipo_16_B.Controllers
 {
-    public class MarcaController : ApiController
+    public class MarcasController : ApiController
     {
         // GET api/marca/Lista
         public IEnumerable<Marca> Get()
@@ -65,7 +65,7 @@ namespace TPAppis_Equipo_16_B.Controllers
             catch (Exception ex)
             {
 
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
 
             }
         }
@@ -96,35 +96,33 @@ namespace TPAppis_Equipo_16_B.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
             }
         }
 
         // DELETE api/marca/x
-        public HttpResponseMessage Delete()
+        public HttpResponseMessage Delete(int id)
         {
             try
-            {
-                var idUrlObject = Request.GetRouteData().Values["id"];
-                if (idUrlObject == null)
+            { 
+                if (id < 1)
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "El ID de ategoria no puede ser nulo.");
 
-                var idUrl = int.Parse(idUrlObject?.ToString());
                 var conexion = new ConexionMarca();
                 Marca marcaEncontrada = null;
 
-                marcaEncontrada = conexion.Listar().Find(x => x.IDMarca == idUrl);
+                marcaEncontrada = conexion.Listar().Find(x => x.IDMarca == id);
 
                 if (marcaEncontrada == null)
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "No existe una marca con ese ID");
 
-                conexion.Eliminar(idUrl);
+                conexion.Eliminar(id);
 
                 return Request.CreateResponse(HttpStatusCode.OK, "Marca borrada correctamente.");
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
             }
         }
     }

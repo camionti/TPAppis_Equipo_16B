@@ -11,7 +11,7 @@ using TPAppis_Equipo_16_B.Models;
 
 namespace TPAppis_Equipo_16_B.Controllers
 {
-    public class CategoriaController : ApiController
+    public class CategoriasController : ApiController
     {
         // GET api/categoria/Lista
 
@@ -48,10 +48,10 @@ namespace TPAppis_Equipo_16_B.Controllers
 
                 Categoria categoriaEncontrada = null;
 
-                categoriaEncontrada = conexion.Listar().Find(x => x.Id == categoria?.Id);
+                categoriaEncontrada = conexion.Listar().Find(x => x.Descripcion == categoria?.Descripcion);
 
-                if(categoriaEncontrada == null) 
-                    return Request.CreateResponse(HttpStatusCode.BadRequest, "La categoria no existe.");
+                if(categoriaEncontrada != null) 
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "La categoria ya existe.");
 
                 var nuevo = new Categoria
                 {
@@ -65,7 +65,7 @@ namespace TPAppis_Equipo_16_B.Controllers
             catch (Exception ex)
             {
 
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
 
             }
         }
@@ -96,35 +96,33 @@ namespace TPAppis_Equipo_16_B.Controllers
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
             }
         }
 
         // DELETE api/categoria/x
-        public HttpResponseMessage Delete()
+        public HttpResponseMessage Delete(int id)
         {
             try
             {
-                var idUrlObject = Request.GetRouteData().Values["id"];
-                if (idUrlObject == null)
-                    return Request.CreateResponse(HttpStatusCode.BadRequest, "El ID de ategoria no puede ser nulo.");
+                if (id < 0)
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "El ID de categoria incorrecto.");
 
-                var idUrl = int.Parse(idUrlObject?.ToString());
                 var conexion = new ConexionCategorias();
                 Categoria categoriaEncontrada = null;
 
-                categoriaEncontrada = conexion.Listar().Find(x => x.Id == idUrl);
+                categoriaEncontrada = conexion.Listar().Find(x => x.Id == id);
 
                 if (categoriaEncontrada == null)
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "No existe una categoría con ese ID");
 
-                conexion.eliminar(idUrl);
+                conexion.eliminar(id);
 
                 return Request.CreateResponse(HttpStatusCode.OK, "Categoria borrada correctamente.");
             }
             catch (Exception ex)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Error de conexion");
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Error inesperado");
             }
         }
     }

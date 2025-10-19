@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\controllers\\imagencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\imagencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\tpappis_equipo_16_b\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\controllers\\marcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\marcacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\tpappis_equipo_16_b\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\models\\imagendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\models\\imagendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12826228-985C-4D61-8299-759E8619529D}|Conexion\\Conexion.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\conexion\\conexionarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12826228-985C-4D61-8299-759E8619529D}|Conexion\\Conexion.csproj|solutionrelative:conexion\\conexionarticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12826228-985C-4D61-8299-759E8619529D}|Conexion\\Conexion.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\conexion\\conexionmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12826228-985C-4D61-8299-759E8619529D}|Conexion\\Conexion.csproj|solutionrelative:conexion\\conexionmarca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\tpappis_equipo_16_b\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\controllers\\articulocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\models\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\models\\marcadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|c:\\users\\renzo\\desktop\\tpappis_equipo_16b\\tpappis_equipo_16_b\\models\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\models\\categoriadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\tpappis_equipo_16_b\\models\\articulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\models\\articulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEB8CC7E-402B-4022-B458-20BE39F38FF8}|dominio\\dominio.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB8CC7E-402B-4022-B458-20BE39F38FF8}|dominio\\dominio.csproj|solutionrelative:dominio\\articulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\tpappis_equipo_16_b\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4BCDB735-0089-4CD2-9E3E-C8EB2DC11281}|TPAppis_Equipo_16_B\\TPAppis_Equipo_16_B.csproj|solutionrelative:tpappis_equipo_16_b\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,144 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImagenDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\ImagenDTO.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Models\\ImagenDTO.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\ImagenDTO.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Models\\ImagenDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T03:27:35.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImagenController.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\ImagenController.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\ImagenController.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\ImagenController.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\ImagenController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwCgAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T03:21:31.936Z",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TPAppis_Equipo_16_B\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T06:01:42.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MarcaController.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\MarcaController.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\MarcaController.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\MarcaController.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\MarcaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\CategoriasController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T00:32:45.51Z",
+              "WhenOpened": "2025-10-19T01:35:08.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ConexionMarca.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\Conexion\\ConexionMarca.cs",
-              "RelativeDocumentMoniker": "Conexion\\ConexionMarca.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\Conexion\\ConexionMarca.cs",
-              "RelativeToolTip": "Conexion\\ConexionMarca.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ConexionArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\Conexion\\ConexionArticulo.cs",
+              "RelativeDocumentMoniker": "Conexion\\ConexionArticulo.cs",
+              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\Conexion\\ConexionArticulo.cs",
+              "RelativeToolTip": "Conexion\\ConexionArticulo.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAAMMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T00:38:32.666Z",
+              "WhenOpened": "2025-10-19T01:25:54.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T00:32:47.743Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "TPAppis_Equipo_16_B\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAAABABAAC+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-19T00:08:29.823Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoriaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\CategoriaDTO.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Models\\CategoriaDTO.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\CategoriaDTO.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Models\\CategoriaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T00:31:41.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MarcaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\MarcaDTO.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Models\\MarcaDTO.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\MarcaDTO.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Models\\MarcaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T00:31:40.41Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ArticuloController.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\ArticuloController.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\ArticuloController.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\ArticuloController.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\ArticuloController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T03:53:10.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T02:45:23.808Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ArticuloDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\ArticuloDTO.cs",
-              "RelativeDocumentMoniker": "TPAppis_Equipo_16_B\\Models\\ArticuloDTO.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\TPAppis_Equipo_16_B\\Models\\ArticuloDTO.cs",
-              "RelativeToolTip": "TPAppis_Equipo_16_B\\Models\\ArticuloDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T18:27:46.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Articulo.cs",
-              "DocumentMoniker": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\dominio\\Articulo.cs",
-              "RelativeDocumentMoniker": "dominio\\Articulo.cs",
-              "ToolTip": "C:\\Users\\Renzo\\Desktop\\TPAppis_Equipo_16B\\dominio\\Articulo.cs",
-              "RelativeToolTip": "dominio\\Articulo.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-13T17:54:03.129Z"
             }
           ]
         }

@@ -1,26 +1,289 @@
 ﻿<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="aspnetTitle">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
     <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>ASP.NET Web API is a framework that makes it easy to build HTTP services that reach
-            a broad range of clients, including browsers and mobile devices. ASP.NET Web API
-            is an ideal platform for building RESTful applications on the .NET Framework.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301870">Learn more &raquo;</a></p>
+        <hr />
+        <section>
+
+            <h2>Articulos</h2>
+            <div class="p-4 bg-primary bg-opacity-10 rounded">
+                <h5>Buscar todos los articulos</h5>
+                <p>
+                    Podés acceder a la lista de articulos usando el endpoint
+                    <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/</span>
+                </p>
+                <p>Request:</p>
+                <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                    <p>[GET]</p>
+                    <p>htps://localhost:{port}/api/articulos/</p>
+                </div>
+                <p class="mt-4">Response:</p>
+
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Spoiler
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <pre class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                                <code>
+[
+    {
+        "Id": 1,
+        "Codigo": "S01",
+        "Nombre": "Galaxy S10",
+        "Descripcion": "Una canoa cara",
+        "Idmarca": 1,
+        "Idcategoria": 1,
+        "Idimagen": 0,
+        "Precio": 69.9990,
+        "TipoMarca": {
+            "IDMarca": 0,
+            "Descripcion": "Samsung"
+        },
+        "TipoCategoria": {
+            "Id": 0,
+            "Descripcion": "Celulares"
+        },
+        "Imagen": [
+            {
+                "IdImagen": 1,
+                "IdArticulo": 1,
+                "UrlImagen": "https://images.samsung.com/is/image/samsung/co-galaxy-s10-sm-g970-sm-g970fzyjcoo-frontcanaryyellow-thumb-149016542",
+                "Eliminada": false
+            }
+        ]
+    },
+    {
+        "Id": 2,
+        "Codigo": "M03",
+        "Nombre": "Moto G Play 7ma Gen",
+        "Descripcion": "Ya siete de estos?",
+        "Idmarca": 1,
+        "Idcategoria": 5,
+        "Idimagen": 0,
+        "Precio": 15699.0000,
+        "TipoMarca": {
+            "IDMarca": 0,
+            "Descripcion": "Samsung"
+        },
+        "TipoCategoria": {
+            "Id": 0,
+            "Descripcion": ""
+        },
+        "Imagen": [
+            {
+                "IdImagen": 2,
+                "IdArticulo": 2,
+                "UrlImagen": "https://www.motorola.cl/arquivos/moto-g7-play-img-product.png?v=636862863804700000",
+                "Eliminada": false
+            },
+            {
+                "IdImagen": 3,
+                "IdArticulo": 2,
+                "UrlImagen": "https://i.blogs.es/9da288/moto-g7-/1366_2000.jpg",
+                "Eliminada": false
+            }
+        ]
+    },
+    {...}
+]
+                    </code>
+                </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+                <div>
+                    <h5>Filtrar articulo por ID</h5>
+                    <p>Buscá un articulo específico utilizando su ID con el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/{IdArticulo}</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[GET]</p>
+                        <p>htps://localhost:{port}/api/articulos/1</p>
+                    </div>
+                    <p class="mt-4">Response:</p>
+
+                    <div class="accordion" id="accordionExample2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Spoiler
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                                <div class="accordion-body">
+                                    <pre class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                                    <code>
+{
+    "Id": 1,
+    "Codigo": "S01",
+    "Nombre": "Galaxy S10",
+    "Descripcion": "Una canoa cara",
+    "Idmarca": 1,
+    "Idcategoria": 1,
+    "Idimagen": 0,
+    "Precio": 69.9990,
+    "TipoMarca": {
+        "IDMarca": 0,
+        "Descripcion": "Samsung"
+    },
+    "TipoCategoria": {
+        "Id": 0,
+        "Descripcion": "Celulares"
+    },
+    "Imagen": [
+        {
+            "IdImagen": 1,
+            "IdArticulo": 1,
+            "UrlImagen": "https://images.samsung.com/is/image/samsung/co-galaxy-s10-sm-g970-sm-g970fzyjcoo-frontcanaryyellow-thumb-149016542",
+            "Eliminada": false
+        }
+    ]
+}
+                    </code>
+                </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr />
+                <div>
+                    <h5>Filtrar articulo por código</h5>
+                    <p>Buscá un articulo específico utilizando su código utilizando el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos?codigo={codigo del articulo}</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[GET]</p>
+                        <p>htps://localhost:{port}/api/articulos?codigo=A23</p>
+                    </div>
+                    <p class="mt-4">Response:</p>
+
+                    <div class="accordion" id="accordionExample3">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Spoiler
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                <div class="accordion-body">
+                                    <pre class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                                    <code>
+{
+    "Id": 5,
+    "Codigo": "A23",
+    "Nombre": "Apple TV",
+    "Descripcion": "lindo loro",
+    "Idmarca": 2,
+    "Idcategoria": 3,
+    "Idimagen": 0,
+    "Precio": 7850.0000,
+    "TipoMarca": {
+        "IDMarca": 0,
+        "Descripcion": "Apple"
+    },
+    "TipoCategoria": {
+        "Id": 0,
+        "Descripcion": "Media"
+    },
+    "Imagen": [
+        {
+            "IdImagen": 6,
+            "IdArticulo": 5,
+            "UrlImagen": "https://cnnespanol2.files.wordpress.com/2015/12/gadgets-mc3a1s-populares-apple-tv-2015-18.jpg?quality=100&strip=info&w=460&h=260&crop=1",
+            "Eliminada": false
+        }
+    ]
+}
+                    </code>
+                </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr />
+                <div>
+                    <h5>Agregar articulo</h5>
+                    <p>Agregá un nuevo articulo a la base de datos usando el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[POST]</p>
+                        <p>htps://localhost:{port}/api/articulos/</p>
+                    </div>
+                </div>
+
+                <hr />
+                <div>
+                    <h5>Modificar articulo</h5>
+                    <p>Modificá un articulo existente en la base de datos con el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/{IdArticulo}</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[PUT]</p>
+                        <p>htps://localhost:{port}/api/articulos/4</p>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <h5>Agregar imágenes al articulo</h5>
+                    <p>Agregá 1 o más imágenes al articulo existente utilizando el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/{IdArticulo}/imagenes</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[POST]</p>
+                        <p>htps://localhost:{port}/api/articulos/4/imagenes</p>
+                    </div>
+
+                    <p class="mt-4">Body:</p>
+
+                    <div class="accordion" id="accordionExample4">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Spoiler
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                <div class="accordion-body">
+                                    <pre class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                                    <code>
+[
+    "https://i.ibb.co/BcqzzgF/Consola-Play-Station-5.png",
+    "https://i.ibb.co/cDj3dpX/Apple-Mac-Book-Pro.png"
+]
+                    </code>
+                </pre>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr />
+                <div>
+                    <h5>Eliminar articulo</h5>
+                    <p>Eliminá un articulo existente de la base de datos fisicamente con el endpoint <span class="p-1 fst-italic bg-info  bg-opacity-25 rounded-1">/api/articulos/{IdArticulo}</span></p>
+                    <p>Request:</p>
+                    <div class="border border-primary px-3 pt-3 pb-1 bg-primary bg-opacity-10 d-flex gap-3">
+                        <p>[DELETE]</p>
+                        <p>htps://localhost:{port}/api/articulos/6</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
         </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301871">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
-        </section>>
+
+        
     </div>
 </main>

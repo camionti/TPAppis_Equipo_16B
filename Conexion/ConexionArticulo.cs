@@ -1,5 +1,6 @@
 ﻿using dominio;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,7 @@ namespace Conexion
 
             try
             {
-                datos.setarConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, A.Precio, I.ImagenUrl, I.Id IdImagen, M.Descripcion Marca, C.Descripcion Categoria FROM ARTICULOS A LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id INNER JOIN CATEGORIAS C ON A.IdCategoria = C.Id INNER JOIN MARCAS M ON A.IdMarca = M.Id");
+                datos.setarConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, A.Precio, I.ImagenUrl, I.Id IdImagen, M.Descripcion Marca, C.Descripcion Categoria FROM ARTICULOS A LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id INNER JOIN MARCAS M ON A.IdMarca = M.Id");
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
@@ -38,7 +39,7 @@ namespace Conexion
                         aux.TipoMarca = new Marca();
                         aux.TipoMarca.Descripcion = (string)datos.Lector["Marca"];
                         aux.TipoCategoria = new Categoria();
-                        aux.TipoCategoria.Descripcion = (string)datos.Lector["Categoria"];
+                        aux.TipoCategoria.Descripcion = datos.Lector["Categoria"] is DBNull ? "" : (string)datos.Lector["Categoria"];
                         aux.Imagen = new List<Imagen>();
 
                         lista.Add(aux);
@@ -147,118 +148,51 @@ namespace Conexion
             }
         }
 
-        public List<Articulo> filtroAvanzado(string campo, string criterio, string filtro, int precioMinimo, int precioMaximo)
+        public Articulo buscarXCodigo(string codigo)
         {
-            List<Articulo> listaArticulos = new List<Articulo>();
-            AccesoDatos BaseDeDatos = new AccesoDatos();
+            AccesoDatos datos = new AccesoDatos();
 
             try
             {
 
-                string consulta = "select A.Id, A.Codigo, A.Nombre, A.Descripcion, Precio, C.Descripcion Categoria,C.Id IdCategoria , M.Descripcion Marca, M.Id IdMarca, I.ImagenUrl UrlImagen, I.Id IdImagen from ARTICULOS A, CATEGORIAS C, MARCAS M, IMAGENES I where M.Id = A.IdMarca And A.IdCategoria = C.Id AND I.Id = (SELECT MIN(Id) FROM IMAGENES WHERE IdArticulo = A.Id) AND ";
+                datos.setarConsulta("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.IdMarca, A.IdCategoria, A.Precio, I.ImagenUrl, I.Id IdImagen, M.Descripcion Marca, C.Descripcion Categoria FROM ARTICULOS A LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id LEFT JOIN CATEGORIAS C ON A.IdCategoria = C.Id INNER JOIN MARCAS M ON A.IdMarca = M.Id WHERE A.Codigo = @codigo");
+                datos.setearParametro("@codigo", codigo);
+                datos.ejecutarLectura();
 
-                switch (campo)
+
+                if (!datos.Lector.Read())
+                    return null;
+
+                Articulo aux = new Articulo();
+
+                aux.Id = (int)datos.Lector["Id"];
+                aux.Codigo = datos.Lector["Codigo"].ToString();
+                aux.Nombre = (string)datos.Lector["Nombre"];
+                aux.Descripcion = (string)datos.Lector["Descripcion"];
+                aux.Idmarca = (int)datos.Lector["IdMarca"];
+                aux.Idcategoria = (int)datos.Lector["IdCategoria"];
+                aux.Precio = (decimal)datos.Lector["Precio"];
+                aux.TipoMarca = new Marca();
+                aux.TipoMarca.Descripcion = (string)datos.Lector["Marca"];
+                aux.TipoCategoria = new Categoria();
+                aux.TipoCategoria.Descripcion = datos.Lector["Categoria"] is DBNull ? "" : (string)datos.Lector["Categoria"];
+                aux.Imagen = new List<Imagen>();
+
+                do
                 {
-                    case "Código":
-                        switch (criterio)
+                    if (!(datos.Lector["IdImagen"] is DBNull))
+                    {
+                        aux.Imagen.Add(new Imagen
                         {
-                            case "Comienza con":
-                                consulta += "Codigo like '" + filtro + "%'";
-                                break;
-
-                            case "Termina con":
-                                consulta += "Codigo like '%" + filtro + "'";
-                                break;
-
-                            default:
-                                consulta += "Codigo like '%" + filtro + "%'";
-                                break;
-                        }
-                        break;
-
-                    case "Marca":
-                        switch (criterio)
-                        {
-                            case "Comienza con":
-                                consulta += "M.Descripcion like '" + filtro + "%'";
-                                break;
-
-                            case "Termina con":
-                                consulta += "M.Descripcion like '%" + filtro + "'";
-                                break;
-
-                            default:
-                                consulta += "M.Descripcion like '%" + filtro + "%'";
-                                break;
-                        }
-                        break;
-
-                    case "Categoría":
-                        switch (criterio)
-                        {
-                            case "Comienza con":
-                                consulta += "C.Descripcion like '" + filtro + "%'";
-                                break;
-
-                            case "Termina con":
-                                consulta += "C.Descripcion like '%" + filtro + "'";
-                                break;
-
-                            default:
-                                consulta += "C.Descripcion like '%" + filtro + "%'";
-                                break;
-                        }
-                        break;
-
-                    default:
-                        switch (criterio)
-                        {
-                            case "Comienza con":
-                                consulta += "Nombre like '" + filtro + "%'";
-                                break;
-
-                            case "Termina con":
-                                consulta += "C.Descripcion like '%" + filtro + "'";
-                                break;
-
-                            default:
-                                consulta += "C.Descripcion like '%" + filtro + "%'";
-                                break;
-                        }
-                        break;
-                }
-
-                //Agrego los precios a la consulta
-                consulta += " AND Precio >= " + precioMinimo + " AND Precio <= " + precioMaximo;
-
-                BaseDeDatos.setarConsulta(consulta);
-                BaseDeDatos.ejecutarLectura();
-
-                 while (BaseDeDatos.Lector.Read())
-                {
-                    Articulo aux = new Articulo();
-                   
-
-                    aux.Id = (int)BaseDeDatos.Lector["Id"];
-                    aux.Codigo = BaseDeDatos.Lector["Codigo"].ToString();
-                    aux.Nombre = (string)BaseDeDatos.Lector["Nombre"];
-                    aux.Descripcion = (string)BaseDeDatos.Lector["Descripcion"];
-                    aux.Idmarca = (int)BaseDeDatos.Lector["IdMarca"];
-                    aux.Idcategoria = (int)BaseDeDatos.Lector["IdCategoria"];
-                    aux.Precio = (decimal)BaseDeDatos.Lector["Precio"];
-                    aux.TipoMarca = new Marca();
-                    aux.TipoMarca.Descripcion = (string)BaseDeDatos.Lector["Marca"];
-                    aux.TipoCategoria = new Categoria();
-                    aux.TipoCategoria.Descripcion = (string)BaseDeDatos.Lector["Categoria"];
-                    aux.Imagen = new List<Imagen>();
-                    aux.Imagen[aux.Id].UrlImagen = (string)BaseDeDatos.Lector["UrlImagen"];
-                    aux.Imagen[aux.Id].IdImagen = (int)BaseDeDatos.Lector["IdImagen"];
+                            IdImagen = (int)datos.Lector["IdImagen"],
+                            UrlImagen = (string)datos.Lector["ImagenUrl"],
+                            IdArticulo = aux.Id
+                        });
+                    }
+                } while (datos.Lector.Read());
 
 
-                    listaArticulos.Add(aux);
-                }
-
-                return listaArticulos;
+                return aux;
             }
             catch (Exception ex)
             {
